@@ -49,7 +49,6 @@ li {
 
 aside {
   background-color: antiquewhite;
-  margin-top: 2rem;
 }
 
 .wrapper {
@@ -57,7 +56,8 @@ aside {
   grid-template-columns: 1fr 1fr;
 }
 
-.container {
+.container,
+aside {
   width: 40%;
   min-width: 360px;
   text-align: center;
