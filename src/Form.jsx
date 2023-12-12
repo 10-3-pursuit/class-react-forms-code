@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const Form = ({ handleSubmit }) => {
+  // only this component cares about the newUser state so it does not need to be in App.jsx
   const [newUser, setNewUser] = useState({
     firstName: "",
     lastName: "",
@@ -11,6 +12,7 @@ const Form = ({ handleSubmit }) => {
     dev: false,
   });
 
+  // these functions are only used in this component so they don't need to be in App.jsx
   function handleChange(event) {
     // console.log(event.target.id, event.target.value);
     setNewUser({ ...newUser, [event.target.id]: event.target.value });
@@ -22,6 +24,7 @@ const Form = ({ handleSubmit }) => {
 
   return (
     <div className="container">
+      {/* handleSubmit must now pass the event and the new User as arguments */}
       <form onSubmit={(e) => handleSubmit(e, newUser)}>
         <label htmlFor="firstName">
           First name:
