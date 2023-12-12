@@ -1,5 +1,3 @@
 # React Forms
 
-- npm install
-
-- npm run dev
+To return to the `main` branch use `git checkout main`
