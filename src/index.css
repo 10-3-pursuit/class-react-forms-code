@@ -39,13 +39,31 @@ label {
   font-size: 1.1rem;
 }
 
+li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 2rem;
+  color: forestgreen;
+  margin-left: 2rem;
+}
+
+aside {
+  background-color: antiquewhite;
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .container {
   width: 40%;
   min-width: 360px;
   text-align: center;
   border: 1px inset black;
   border-radius: 5px;
-  margin: 3rem auto;
+  margin: 8rem auto;
   padding: 20px;
   background-color: whitesmoke;
   box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
